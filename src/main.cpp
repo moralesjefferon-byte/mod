@@ -1844,8 +1844,7 @@ class $modify(IndicatorLayer, PlayLayer) {
             const bool riding = L.holdTracks && !tap
                              && f->state[i] == kActive
                              && (held & (h.player2 ? 2 : 1)) != 0;
-
-            float left, right;
+if (!tap) continue;        float left, right;
             if (tap) {
                 left  = x0 - L.width * .5f;
                 right = x0 + L.width * .5f;
